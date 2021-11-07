@@ -1,0 +1,8 @@
+:schedule:
+  distance_travelled_worker:
+    cron: '0 * * * * *'   # Runs once per minute
+    class: DistanceTravelledWorker
+
+  avg_active_time_worker:
+    cron: '0 * * * * *'   # Runs once per minute
+    class: AvgActiveTimeWorker
