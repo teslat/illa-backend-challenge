@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "2d0427c1-857d-4f2f-8af1-887b9d499e37",
+		"name": "Illa Backend Challange",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Truck",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "plate_number",
+							"value": "123-abc",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/trucks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"trucks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Log truck",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "truck_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "30.708000",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "31.3567712",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/truck/log",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"truck",
+						"log"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Active Trucks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "truck_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "30.709000",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "31.3147718",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/trucks/active",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"trucks",
+						"active"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get truck summery",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "from_date",
+							"value": "2021-11-07 00:00:00",
+							"type": "text"
+						},
+						{
+							"key": "to_date",
+							"value": "2021-11-07 23:00:00",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/truck/1/summary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"truck",
+						"1",
+						"summary"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
